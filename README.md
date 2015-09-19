@@ -2,7 +2,11 @@
 
 Example of Promises in ES6 and ES7
 
-
+###Install Babel
+```bash
+npm install -g babel
+npm install
+```
 
 ###ES6
 ```bash
