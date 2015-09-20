@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel src/ -d dist/ && node dist/index.js",
     "build-es7": "babel src -x .es7 -d dist",
+    "util": "babel src/util.es6 -o dist/util.js",
     "run-es7": "node dist/index2.js",
-    "es7": "npm run build-es7 && npm run run-es7"
+    "es7": "npm run build-es7 && npm run util && npm run run-es7"
   },
   "author": "joseph",
   "license": "MIT",

@@ -1,8 +1,5 @@
 require('babel-core/polyfill');
-
-function log(txt){
-    console.log(txt);
-}
+global.log = require('./util.js');
 
 var delay = time => new Promise(resolve => setTimeout(resolve, time))
 
